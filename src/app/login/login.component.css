@@ -1,0 +1,56 @@
+.contenedorLogin {
+    max-width: 550px;
+    background-image: url('/assets/image.png');
+    background-color: rgba(255, 255, 255, 0.5); 
+    background-blend-mode: overlay;
+    height: auto; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(242, 241, 241, 0.811);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/iconoUsuario.png');
+    background-size: cover;
+    background-position: center;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+.center-content {
+    overflow: hidden !important; 
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.llenarInformacion {
+    width: 95%;
+    height: 35%;
+}
+.mat-icon {
+    color: rgba(0, 0, 0, 0.54);
+}
+.mat-icon.matPrefix {
+    margin-left: 5px;
+}
+.IconoContraseña {
+    color: #7f7f7f;
+}
+.login-btn { 
+    justify-content: center;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    font-size: 14px; 
+    padding: 10px 20px; 
+}
+.login-btn:hover { 
+    justify-content: center;
+    background-color: #eff2f4;
+}

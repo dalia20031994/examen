@@ -1,0 +1,36 @@
+<div class="container mt-5">
+    <div>
+      <h2 class="tituloTabla">Lista de usuarios</h2>
+    </div>
+    <div class="table-container">
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th class="table-header">ID</th>
+            <th class="table-header">Nombre</th>
+            <th class="table-header">Correo</th>
+            <th class="table-header">Rol</th>
+            <th class="table-header">Contraseña</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users | slice: (currentPage - 1) * itemsPerPage : currentPage * itemsPerPage">
+            <td>{{ user.id }}</td>
+            <td>{{ user.name }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.role }}</td>
+            <td>{{ user.password }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="pagination-container text-center mt-3">
+      <paginacion
+        [length]="users.length"
+        [pageSize]="itemsPerPage"
+        [pageSizeOptions]="[10, 50, 100]"
+        (page)="onPageChange($event)"
+      ></paginacion>
+    </div>
+  </div>

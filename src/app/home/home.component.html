@@ -1,0 +1,20 @@
+<mat-toolbar style="background-color: black;" color="primary">
+    <span>Bienvenido</span>
+    <span class="spacer"></span>
+    <button mat-button routerLink="inicio">Inicio</button>
+    <button mat-button routerLink="usuarios">Usuarios</button>
+    <button mat-button routerLink="/acerca">Acerca de</button>
+    <button mat-button routerLink="/Contacto">Contacto</button>
+    <button mat-icon-button [matMenuTriggerFor]="userMenu">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+    <mat-menu #userMenu="matMenu">
+      <button mat-menu-item routerLink="/profile">Perfil</button>
+      <button mat-menu-item routerLink="/settings">Configurar</button>
+      <button mat-menu-item routerLink="/login">Cerrar Sesión</button>
+    </mat-menu>
+  </mat-toolbar>
+  <!--Pone lo que esta en inicio-->
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
