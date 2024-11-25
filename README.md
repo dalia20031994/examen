@@ -1,15 +1,18 @@
 # DALIA EUNICE MARTINEZ GONZALEZ 
 # Procedimiento para el uso de una  API 
+
 **Api utilizada**
 Se utilizo una api de peliculas:
+
 https://www.omdbapi.com/?s=movie&y=2010&apikey=295b2105
+
 **Mostrar nombre del usuario e imagen**
 
-Para poder mostrar el nombre de usuario en uso y su foto de perfil de acuerdo a la API, en primer lugar realice modificaciones en el servicio de usuarios patra obtener el usuario en uso, guardando dicho usuario localmente
+Para poder mostrar el nombre de usuario en uso y su foto de perfil de acuerdo a la API, en primer lugar realice modificaciones en el servicio de usuarios patra obtener el usuario en uso, guardando dicho usuario localmente.
 
-![image](https://github.com/user-attachments/assets/64c7dabb-5888-4e0b-ba0e-71c1062c2a10)
+![image](https://github.com/user-attachments/assets/905de7fe-67f2-4ca1-998c-0ce272404b3e)
 
-Luego modifique el metodo que se encarga de iniciar sesión en el login.component.ts para que guardara el usuario que ingreso 
+Luego modifique el metodo que se encarga de iniciar sesión en el login.component.ts para que guardara el usuario que ingreso.
 
 ![image](https://github.com/user-attachments/assets/74196537-a2ce-4d3a-92fc-93332894619e)
 
@@ -21,11 +24,12 @@ Tambien modifique el menu superior para que hay se muestre el nombre y la foto d
 
 
 **Nuevo servicio para la API de las peliculas**
-Primero cree un nuevo servicio para obtener las peliculas de la API
+
+Primero cree un nuevo servicio para obtener las peliculas de la API.
 
 ![image](https://github.com/user-attachments/assets/4a10a5a2-bb76-42c3-aed4-11560dd69f9d)
 
-Como la API no muestra todas las peliculas, unicamente las muestra por filtros modifique el servicio para que mandara las peliculas por año desde el 2010 al 2020
+Como la API no muestra todas las peliculas, unicamente las muestra por filtros modifique el servicio para que mandara las peliculas por año desde el 2010 al 2020.
 
 ![image](https://github.com/user-attachments/assets/2bcaa96c-5db6-45c3-9e03-17172f66f566)
 
@@ -59,12 +63,13 @@ Se agregaron los metodos para el modal de eliminar
 
 ![image](https://github.com/user-attachments/assets/06d0210a-ca30-4f28-8876-959347f7d751)
 
-Metodo para realizar la busqueda de las pelicualas en la API
+Metodo para realizar la busqueda de las peliculas en la API
 
 ![image](https://github.com/user-attachments/assets/8e744c4e-cbe8-4bfc-81e5-6ed0db5900f3)
 
 ***peliculas-lista.component.html***
-En html se incluye la estructura de la tabla y sus componentes, en la imagen mustro como se recorren las peliculas patra mostrar sus datos en la tabla, asi como el buscador para realizar busquedas en la API
+
+En html se incluye la estructura de la tabla y sus componentes, en la imagen muestra como se recorren las peliculas patra mostrar sus datos en la tabla, asi como el buscador para realizar busquedas en la API
 
 ![image](https://github.com/user-attachments/assets/357ba043-4201-445a-81a2-59545b80e8b1)
 
@@ -74,41 +79,86 @@ Para el modal de detalles
 
 Para el modal de editar
 
-![image](https://github.com/user-attachments/assets/fcdcde76-4852-4ff9-ab0f-7986446c4250)
+![image](https://github.com/user-attachments/assets/7a15e4f4-3b81-4acf-a9f3-49836e86fc9d)
 
 Para el modal de eliminar
 
-![image](https://github.com/user-attachments/assets/b75659b5-0c71-42dd-9fd8-5f58bb4625b5)
+![image](https://github.com/user-attachments/assets/bd9bd09d-8db5-4464-8e60-a7e0d2b0742e)
+
+
+***peliculas-lista.component.css***
+
+![image](https://github.com/user-attachments/assets/e3951557-f767-43c1-9bd9-bacba49e3f39)
+
+![image](https://github.com/user-attachments/assets/df184389-02d5-4569-8134-da4477d95490)
+
+![image](https://github.com/user-attachments/assets/8e50d2db-b40b-4ad9-931d-e62d834979c5)
+
+**Componentes de la paginacion**
+
+![image](https://github.com/user-attachments/assets/019d0cd6-e47f-464e-9a6f-13c6464b9e34)
+
+Se modifico el paginacion.component.ts
+
+![image](https://github.com/user-attachments/assets/c679ab34-63bd-470c-855f-ce273f361290)
+
+Se modifico el paginacion.component.html
+
+![image](https://github.com/user-attachments/assets/c328f86a-d091-4189-8553-091d283928a5)
+
+
 
 **Resultados**
 
+***Inicio de secion***
+
 ![image](https://github.com/user-attachments/assets/03a01dc3-a5a4-49bb-b3a6-04cda52e5af9)
 
+***pagina principal***
 
 ![image](https://github.com/user-attachments/assets/12c5c0d3-bf7f-461a-a62c-fe18205d8920)
 
-
+***Tabla con las peliculas***
 
 ![image](https://github.com/user-attachments/assets/725509f8-4b58-4e17-b15a-2008f62a28a2)
 
-
+***Buscar***
 
 ![image](https://github.com/user-attachments/assets/1dc3a3b9-f03a-4f8f-aa21-0944f7038267)
 
+***Ver detalles***
 
 ![image](https://github.com/user-attachments/assets/b17c0e9c-8a11-42f6-b71e-99370ede56eb)
 
+***Editar***
+
+Al dar clic en el icono de editar se muestra un modal con los datos de la pelicula
 
 ![image](https://github.com/user-attachments/assets/e3b7d287-2811-4993-b4a8-4e5a1a9c3a24)
 
+Si se modifica por ejemplo el año se acgtualiza la tabla con el dato modificado
 
-![image](https://github.com/user-attachments/assets/0f261487-655f-49a5-a018-1ba347298682)
+![image](https://github.com/user-attachments/assets/43b7c2a6-6cc3-4930-94f1-f869d3284f07)
+
+![image](https://github.com/user-attachments/assets/ec01c729-7253-4a2c-863f-bb3a4f1e1979)
+
+***Eliminar***
+
+Al dar clic en elñ icono de eliminar se muestra un modal para verificar si realmente se desea eliminar la pelicula seleccionada, si se selecciona eliminar se recarga la tabla y ya no se muestra la palicula
+
+![image](https://github.com/user-attachments/assets/ea2e6e98-6984-4947-b4f1-4f1bff7332f8)
+
+![image](https://github.com/user-attachments/assets/25290bcf-3c5f-4892-80e8-24ee0bdbfcb7)
+
+***paginacion***
+
+En la tabla se puede modificar la paginacion para que se muestren la cantidad seleccionada de peliculas por pagina, por defeto se muestran 10
+
+![image](https://github.com/user-attachments/assets/2e13b4e2-965b-43d2-98b4-14f242ab9eaa)
 
 
+# PROCEDIMIENTO PREVIO PARA LA REALIZACION DEL LOGIN Y VERIFICAR REGISTRO DE SESIÓN MEDIANTE LA API
 
-
-
-# PROCEDIMIENTO PREVIO PARA LA REALIZACION DEL LOGIN Y VERIFICAR REGISTRO DE SESIÓN MESIANTE LA API
 # Creación del proyecto Angular
 
 En primer lugar, se creo el proyecto de angular para la realización de Login con el comando ng new ProgramWebLogin_DEMG como se muestra en la siguiente imagen
