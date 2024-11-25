@@ -9,9 +9,10 @@ import { FormsModule } from '@angular/forms';
 import {MatCardModule} from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 @Component({
-  selector: 'app-perros-lista',
+  selector: 'app-pelicula-lista',
   standalone: true,
-  imports: [CommonModule, PaginacionComponent, MatDialogModule,MatButtonModule,MatIconModule,FormsModule,MatCardModule,MatFormFieldModule],
+  imports: [CommonModule, PaginacionComponent, MatDialogModule,MatButtonModule,MatIconModule,FormsModule,MatCardModule,
+  MatFormFieldModule],
   templateUrl: './peliculas-lista.component.html',
   styleUrls: ['./peliculas-lista.component.css']
 })
@@ -95,7 +96,7 @@ export class PeliculasListaComponent implements OnInit {
     }
   }
   //PARA ELIMINAR
-  @ViewChild('modalConfirmarEliminacion') confEliminarModal!: TemplateRef<any>; // Referencia al modal
+  @ViewChild('modalConfirmarEliminacion') confEliminarModal!: TemplateRef<any>; 
   peliculaEliminada: any; 
   abrirEliminarModal(movie: any): void {
     this.peliculaEliminada = movie; 

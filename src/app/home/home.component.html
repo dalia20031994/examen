@@ -1,6 +1,7 @@
 <mat-toolbar style="background-color: black;" color="primary">
   <div class="Bienvenido">
     <span>Bienvenido</span>
+     <!--mostrar nombre-->
     <span *ngIf="user?.name">{{ user.name }}</span>
   </div>
   <span class="spacer"></span>
@@ -8,6 +9,7 @@
     <button mat-button routerLink="peliculas">Peliculas</button>
     <button mat-button routerLink="/acerca">Acerca de</button>
     <button mat-button routerLink="/Contacto">Contacto</button>
+     <!--mostrar foto de perfil-->
     <button mat-icon-button [matMenuTriggerFor]="userMenu">
       <img [src]="user?.avatar" alt="Foto del usuario" class="avatar" />
     </button>
@@ -17,7 +19,6 @@
       <button mat-menu-item (click)="cerrarSesion()" routerLink="/login">Cerrar Sesión</button>
     </mat-menu>
   </mat-toolbar>
-  <!--Pone lo que esta en inicio-->
   <div class="content">
     <router-outlet></router-outlet>
   </div>
