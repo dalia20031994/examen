@@ -1,5 +1,87 @@
 # DALIA EUNICE MARTINEZ GONZALEZ 
-# PROCEDIMIENTO
+# Procedimiento para el uso de una  API 
+**Api utilizada**
+Se utilizo una api de peliculas:
+https://www.omdbapi.com/?s=movie&y=2010&apikey=295b2105
+**Mostrar nombre del usuario e imagen**
+
+Para poder mostrar el nombre de usuario en uso y su foto de perfil de acuerdo a la API, en primer lugar realice modificaciones en el servicio de usuarios patra obtener el usuario en uso, guardando dicho usuario localmente
+
+![image](https://github.com/user-attachments/assets/64c7dabb-5888-4e0b-ba0e-71c1062c2a10)
+
+Luego modifique el metodo que se encarga de iniciar sesión en el login.component.ts para que guardara el usuario que ingreso 
+
+![image](https://github.com/user-attachments/assets/74196537-a2ce-4d3a-92fc-93332894619e)
+
+Tambien modifique el menu superior para que hay se muestre el nombre y la foto del usuario que ingresa modificando el home.component.ts y el home.component.html
+
+![image](https://github.com/user-attachments/assets/f628eddc-e32c-4abe-9649-309e040e888f)
+
+![image](https://github.com/user-attachments/assets/03af57ac-8085-404c-b5ab-72a790415bd6)
+
+
+**Nuevo servicio para la API de las peliculas**
+Primero cree un nuevo servicio para obtener las peliculas de la API
+
+![image](https://github.com/user-attachments/assets/4a10a5a2-bb76-42c3-aed4-11560dd69f9d)
+
+Como la API no muestra todas las peliculas, unicamente las muestra por filtros modifique el servicio para que mandara las peliculas por año desde el 2010 al 2020
+
+![image](https://github.com/user-attachments/assets/2bcaa96c-5db6-45c3-9e03-17172f66f566)
+
+**crear los componentes para la lista de peliculas**
+
+![image](https://github.com/user-attachments/assets/c8437dac-801e-42ee-b3f4-d0cae8e7bbca)
+
+***peliculas-lista.component.ts***
+
+Importe los modulos necesarios para poder utilizarlos en la realizacion de la tabla para mostrar las peliculas y realizar acciones sonbre la tabla
+
+![image](https://github.com/user-attachments/assets/4be9b9de-3b50-4579-b665-a706354d292a)
+
+Se utilizo el servicio en el constructor para obtener las peliculas de la api, se declararon variables para su utilizacion en los metodos y se obtuvieron las peliculas en ngOnInit creando una copia para el buscador
+
+![image](https://github.com/user-attachments/assets/9bb5e04a-b32d-404d-bce0-f8856dcc8023)
+
+Se agrego la parte de la paginacion para que las peliculas se muestren inicialmente de 10 en 10
+
+![image](https://github.com/user-attachments/assets/403690cb-9425-4e0e-9df2-eabdb1ba24cd)
+
+Se agregaron los metodos para el modal de ver detalles de las peliculas
+
+![image](https://github.com/user-attachments/assets/9efb7b84-4b20-41d3-8df7-678bb515ca1a)
+
+Se agregaron los metodos para el modal que permitira editar alguna pelicula seleccionada
+
+![image](https://github.com/user-attachments/assets/64285507-2829-4a77-accc-ac271782bdd3)
+
+Se agregaron los metodos para el modal de eliminar
+
+![image](https://github.com/user-attachments/assets/06d0210a-ca30-4f28-8876-959347f7d751)
+
+Metodo para realizar la busqueda de las pelicualas en la API
+
+![image](https://github.com/user-attachments/assets/8e744c4e-cbe8-4bfc-81e5-6ed0db5900f3)
+
+***peliculas-lista.component.html***
+En html se incluye la estructura de la tabla y sus componentes, en la imagen mustro como se recorren las peliculas patra mostrar sus datos en la tabla, asi como el buscador para realizar busquedas en la API
+
+![image](https://github.com/user-attachments/assets/357ba043-4201-445a-81a2-59545b80e8b1)
+
+Para el modal de detalles
+
+![image](https://github.com/user-attachments/assets/2a3e9e13-d38c-41bc-827f-15e4bdcbbf00)
+
+Para el modal de editar
+
+![image](https://github.com/user-attachments/assets/fcdcde76-4852-4ff9-ab0f-7986446c4250)
+
+Para el modal de eliminar
+
+![image](https://github.com/user-attachments/assets/b75659b5-0c71-42dd-9fd8-5f58bb4625b5)
+
+
+# PROCEDIMIENTO PREVIO PARA LA REALIZACION DEL LOGIN Y VERIFICAR REGISTRO DE SESIÓN MESIANTE LA API
 # Creación del proyecto Angular
 
 En primer lugar, se creo el proyecto de angular para la realización de Login con el comando ng new ProgramWebLogin_DEMG como se muestra en la siguiente imagen
