@@ -80,6 +80,33 @@ Para el modal de eliminar
 
 ![image](https://github.com/user-attachments/assets/b75659b5-0c71-42dd-9fd8-5f58bb4625b5)
 
+**Resultados**
+
+![image](https://github.com/user-attachments/assets/03a01dc3-a5a4-49bb-b3a6-04cda52e5af9)
+
+
+![image](https://github.com/user-attachments/assets/12c5c0d3-bf7f-461a-a62c-fe18205d8920)
+
+
+
+![image](https://github.com/user-attachments/assets/725509f8-4b58-4e17-b15a-2008f62a28a2)
+
+
+
+![image](https://github.com/user-attachments/assets/1dc3a3b9-f03a-4f8f-aa21-0944f7038267)
+
+
+![image](https://github.com/user-attachments/assets/b17c0e9c-8a11-42f6-b71e-99370ede56eb)
+
+
+![image](https://github.com/user-attachments/assets/e3b7d287-2811-4993-b4a8-4e5a1a9c3a24)
+
+
+![image](https://github.com/user-attachments/assets/0f261487-655f-49a5-a018-1ba347298682)
+
+
+
+
 
 # PROCEDIMIENTO PREVIO PARA LA REALIZACION DEL LOGIN Y VERIFICAR REGISTRO DE SESIÓN MESIANTE LA API
 # Creación del proyecto Angular
