@@ -1,17 +1,20 @@
 <mat-toolbar style="background-color: black;" color="primary">
+  <div class="Bienvenido">
     <span>Bienvenido</span>
-    <span class="spacer"></span>
+    <span *ngIf="user?.name">{{ user.name }}</span>
+  </div>
+  <span class="spacer"></span>
     <button mat-button routerLink="inicio">Inicio</button>
-    <button mat-button routerLink="usuarios">Usuarios</button>
+    <button mat-button routerLink="peliculas">Peliculas</button>
     <button mat-button routerLink="/acerca">Acerca de</button>
     <button mat-button routerLink="/Contacto">Contacto</button>
     <button mat-icon-button [matMenuTriggerFor]="userMenu">
-      <mat-icon>account_circle</mat-icon>
+      <img [src]="user?.avatar" alt="Foto del usuario" class="avatar" />
     </button>
     <mat-menu #userMenu="matMenu">
       <button mat-menu-item routerLink="/profile">Perfil</button>
       <button mat-menu-item routerLink="/settings">Configurar</button>
-      <button mat-menu-item routerLink="/login">Cerrar Sesión</button>
+      <button mat-menu-item (click)="cerrarSesion()" routerLink="/login">Cerrar Sesión</button>
     </mat-menu>
   </mat-toolbar>
   <!--Pone lo que esta en inicio-->

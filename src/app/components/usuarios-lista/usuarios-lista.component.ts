@@ -22,6 +22,8 @@ export class UsuariosListaComponent implements OnInit {
       (data) => {
         this.users = data;
         this.updatePaginatedUsers(); 
+        console.error('Respuesta inesperada:', this.users);
+
       },
       (error) => {
         console.error('Error al obtener los usuarios:', error);

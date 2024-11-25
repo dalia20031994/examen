@@ -1,4 +1,16 @@
 .spacer {
-    flex: 1 1 auto;
-  }
+    flex: 1;
+}
+.Bienvenido {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-size: 22px;
+}
+.avatar {
+  width: 40px; 
+  height: 40px; 
+  border-radius: 50%; 
+}
   
