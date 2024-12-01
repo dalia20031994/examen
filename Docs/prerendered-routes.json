@@ -1,8 +1,0 @@
-{
-  "routes": [
-    "/home",
-    "/home/inicio",
-    "/home/peliculas",
-    "/login"
-  ]
-}
